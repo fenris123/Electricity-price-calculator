@@ -1,4 +1,8 @@
-# Electricity-price-calculator
+# Electricity-price-calculator  (STOPED DUE TO DENIED ACCESS BY ESIOS)
+
+
+
+
 With this python program (in progres) you can calculate the cost of the electricity for the company that sells it tou you (Only for Spain).
 
 Rest of the description is in spanish.
@@ -11,22 +15,6 @@ Con este script EN DESARROLLO, pretendemos desarrollar un sistema que calcule el
 Asi, podra compararse con la factura mensual que se recibe y calcular el beneficio que mete cada empresa.
 
 AVISO:  Solo se introduciran los principales costes.  Componentes con una participacion muy pequeña o muy puntual no seran añadidos.
-
-
-
-
-DATOS a analizar y su indicador (inclusion en el script, en progreso)
-
-
-10211  Precio medio horario final suma de componentes
-811    Precio medio horario componente banda secundaria
-812    Precio medio horario componente desvíos medidos
-10403  Precio medio horario componente mecanismo de ajuste RD-L 10/2022   (NOTA PARA MI:  Introducir solo entre junio del 22 y enero del 23, ambos incluidos.)
-805    Precio medio horario componente mercado diario  (Equivalente a mercado spot, indicador 600. Identicos valores, solo cambia la nomenclatura)) 
-806    Precio medio horario componente restricciones PBF
-807    Precio medio horario componente restricciones tiempo real
-813    Precio medio horario componente saldo de desvíos
-
 
 El resto de los indicadores puede encontrarse aqui:
 
