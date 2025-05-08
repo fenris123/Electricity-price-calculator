@@ -29,9 +29,12 @@ FUNCION INDICADORES (Funcional, pero aun en desarrollo para mejorarlo):
 Esto nos da un listado de los indicadores de ESIOS.  Ademas se puede hacer una busqueda de palabras concretas en la descripcion de los indicadores.
 
 
-CALCULADOR PRECIO LUZ API ESIOS 
+CALCULADOR PRECIO MAYORISTA: 
 
-Esto nos da el precio del mercado spot en las fechas elegidas
+Esto nos da el precio del mercado spot en las fechas elegidas.
 
 Actualmente el script obtiene los datos por hora del precio del mercado y los guarda en un archivo JSON.
-Debemos incluir en la peticion los demas datos, integrarlos y posteriormente realizar las operaciones necesarias con ellos.
+
+
+
+Debemos incluir los demas datos, integrarlos y posteriormente realizar las operaciones necesarias con ellos en conjunto
