@@ -8,7 +8,7 @@ With this python program (in progres) you can calculate the cost of the electric
 Rest of the description is in spanish.
 
 
-DESCRIPCION GENERAL:
+# DESCRIPCION GENERAL:
 
 Con este script EN DESARROLLO, pretendemos desarrollar un sistema que calcule el precio total de la energia para las comercializadoras entre una fecha determinada y otra.
 
@@ -22,7 +22,16 @@ https://www.esios.ree.es/es/analisis/10211?compare_indicators=805%2C806%2C807%2C
 
 
 
-ESTADO DE DESARROLLO:
+# ESTADO DE DESARROLLO:
+
+FUNCION INDICADORES (Funcional, pero aun en desarrollo para mejorarlo):  
+
+Esto nos da un listado de los indicadores de ESIOS.  Ademas se puede hacer una busqueda de palabras concretas en la descripcion de los indicadores.
+
+
+CALCULADOR PRECIO LUZ API ESIOS 
+
+Esto nos da el precio del mercado spot en las fechas elegidas
 
 Actualmente el script obtiene los datos por hora del precio del mercado y los guarda en un archivo JSON.
 Debemos incluir en la peticion los demas datos, integrarlos y posteriormente realizar las operaciones necesarias con ellos.
