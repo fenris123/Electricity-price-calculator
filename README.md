@@ -24,9 +24,9 @@ https://www.esios.ree.es/es/analisis/10211?compare_indicators=805%2C806%2C807%2C
 
 # ESTADO DE DESARROLLO:
 
-FUNCION INDICADORES (Funcional, pero aun en desarrollo para mejorarlo):  
+FUNCION INDICADORES:  
 
-Esto nos da un listado de los indicadores de ESIOS.  Ademas se puede hacer una busqueda de palabras concretas en la descripcion de los indicadores.
+Esto nos da un listado de los indicadores de ESIOS.
 
 
 CALCULADOR PRECIO MAYORISTA: 
