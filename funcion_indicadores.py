@@ -5,6 +5,11 @@ Created on Thu May  8 12:57:10 2025
 @author: fenris123
 """
 
+
+#### RECUERDA:  PARA EJECUTAR
+###  catalogo = catalogo_esios (), con el termino que se quiera buscar entre comillas, o en blanco para todos.
+
+
 import requests
 import pandas as pd
 import os
@@ -15,9 +20,9 @@ import re
 #PASO 1   Definimos la funcion, ponemos el token, los headers etc, y acemos la peticion de datos.
 
 
-def catalogo_esios():
+def catalogo_esios(indicador_buscado = ""):
 
-  
+    
 
     load_dotenv(r'C:\espaciopython\enviroments\tokens.env')  #EN ESTE ARCHIVO DEBEN ESTAR LOS DATOS DE CONEXION
     Token_esios = os.getenv("TOKEN_ESIOS")
@@ -42,15 +47,17 @@ def catalogo_esios():
     df_indicadores["description"] = df_indicadores["description"].apply(
     lambda x: re.sub(r"<.*?>", "", x) if isinstance(x, str) else x
 )
-           
+     
+    
+# PASO 3  filtramos por el termino de busqueda
+
+
+    for i in range(len(df_indicadores)):
+        if indicador_buscado.lower() in df_indicadores['name'].iloc[i].lower():
+            print(f"{df_indicadores.loc[i,'id']} -> {df_indicadores.loc[i,'name']}")
+       
+ 
     return (df_indicadores)
 
 
-##  CONTINUAR POR AQUI:  METER ESTO DE ALGUNA FORMA EN LA FUNCION.
-##  AHORA MISMO HABRIA QUE EJCUTARLO INDEPENDIENTEMENTE
 
-#    catalogo = catalogo_esios
-
-#    for i in range(len(catalogo)):
-#       if catalogo['name'].iloc[i].str.contains('uclear'):
-#          print (f"{catalogo.loc[i,'id']} -> {catalogo.loc[i,'name']}")
